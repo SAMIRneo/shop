@@ -19,9 +19,12 @@
     {file:'08-marketing-collection',caption:'La collection — des têtes à réunir.'},
     {file:'09-reference-sourire-blanc',caption:'Détail de référence — sourire blanc.'},
     {file:'10-reference-sourire-simple',caption:'Détail de référence — sourire simple.'},
-    {file:'11-reference-dents-quadrillees',caption:'Détail de référence — dents quadrillées.'}
+    {file:'11-reference-dents-quadrillees',caption:'Détail de référence — dents quadrillées.'},
+    {file:'pack-duo-ski-v3',extension:'webp',caption:'Pack Duo — deux amis au ski. Visuel de campagne créé par IA.'},
+    {file:'pack-trio-ski-v3',extension:'webp',caption:'Pack Trio — trois amis au ski. Visuel de campagne créé par IA.'},
+    {file:'pack-quatro-ski-v3',extension:'webp',caption:'Pack Quatro — quatre amis au ski. Visuel de campagne créé par IA.'}
   ];
-  const imageSrc = (index,thumb=false) => 'assets/' + (thumb ? 'thumbs/' : '') + IMAGES[index].file + '.jpg';
+  const imageSrc = (index,thumb=false) => 'assets/' + (thumb ? 'thumbs/' : '') + IMAGES[index].file + '.' + (IMAGES[index].extension || 'jpg');
   const state = {pack:2,quantity:1,expressions:[0,1,2,3],cart:[]};
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
@@ -88,6 +91,7 @@
   $('#zoomBtn').addEventListener('click',()=>openViewer(currentImage));
   $$('.gallery__main').forEach(el=>el.addEventListener('dblclick',()=>openViewer(currentImage)));
   $$('[data-preview]').forEach(button=>button.addEventListener('click',()=>openViewer(Number(button.dataset.preview))));
+  $$('[data-pack-preview]').forEach(button=>button.addEventListener('click',()=>openViewer(Number(button.dataset.packPreview))));
   $$('[data-detail]').forEach(button=>button.addEventListener('click',()=>openViewer(Number(button.dataset.detail)+8)));
   $('#lightboxClose').addEventListener('click',()=>closeDialog());
   $('#lbPrev').addEventListener('click',()=>stepViewer(-1));

@@ -1,4 +1,4 @@
-# BRICKFACE — À chacun sa tête.
+# BRICKFACE — Têtes de brique. Bande de potes.
 
 Boutique de démonstration statique en HTML, CSS et JavaScript, sans installation.
 
@@ -20,10 +20,13 @@ Chaque bonnet se personnalise avec Sourire, Langue, Colère ou Surprise. Plusieu
 
 ## Parcours et images
 
-- Trois cartes Duo, Trio, Quatro en premier, adaptées à l'ordinateur et au mobile.
+- Trois cartes Duo, Trio, Quatro en premier, avec photos de 2, 3 et 4 skieurs portant les cagoules jaunes.
+- Visuels carrés affichés sans recadrage, cartes pleine largeur sur mobile, accès rapide à chaque pack.
+- Direction goofy/hype : jaune, violet, vert, contours noirs, stickers, ombres et bande animée.
+- WebP avec variantes 640 / 960 / 1254 pixels, sélectionnées par `srcset` selon la largeur d'écran.
 - Configurateur individuel avec aperçus et prix réactif.
 - Galerie de huit images avec vignettes, légendes, flèches et balayage tactile.
-- Visionneuse plein écran donnant accès aux onze images, y compris les détails de référence.
+- Visionneuse plein écran donnant accès aux quatorze images : produit, détails et nouvelles scènes de packs.
 - Images entières avec `object-fit: contain`, dimensions explicites et chargement différé sous le premier écran.
 - Série des quatre expressions, lookbook montagne et galerie de finitions.
 - Panier de packs complets, compositions conservées et stockage local sur le navigateur.
@@ -55,3 +58,9 @@ GitHub Pages publie la racine de la branche `main`. Les chemins des fichiers son
 Le panier est une démonstration : aucune commande, collecte d'adresse ou transaction réelle n'est envoyée. Aucun compte à rebours, stock aléatoire ou avis client inventé n'est affiché. Avant une ouverture réelle, connecter paiement, commandes, inventaire, livraison et informations commerciales.
 
 BRICKFACE est non affilié à LEGO®. Visuels à titre d'illustration.
+
+## Visuels de campagne ski
+
+Les scènes Duo, Trio et Quatro ont été créées avec le générateur d’images intégré à partir de la photo du produit, puis vérifiées : exactement 2, 3 et 4 adultes, cagoules en tricot jaune avec sommet cylindrique, expressions visibles, décor de ski. Les fichiers `assets/pack-*-ski-v3*.webp` sont destinés au site. Les fichiers source et prompts de création sont conservés dans les livrables du chat. La mention de création par IA apparaît dans les légendes du zoom et le bas de page.
+
+La boutique conserve son hébergement GitHub Pages ; le style s’inspire d’une boutique de streetwear, sans migration vers Shopify.
