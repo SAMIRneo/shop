@@ -3,650 +3,144 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BRICKFACE™ — Le bonnet qui fait sourire 🔥</title>
-  <meta name="description" content="LEGO Balaclava Minifigure : le style LEGO en toute saison. 4 expressions brodées, protection hivernale totale, look iconique, hype garantie. Livraison offerte dès 50€." />
-  <meta name="theme-color" content="#FFCF00" />
-  <meta property="og:type" content="product" />
+  <title>BRICKFACE — Duo, Trio, Quatro. À chacun sa tête.</title>
+  <meta name="description" content="Compose ton équipe BRICKFACE : packs Duo, Trio et Quatro de balaclavas jaunes. Choisis les expressions de chaque bonnet et découvre la collection en images." />
+  <meta name="theme-color" content="#ffcf00" />
+  <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
-  <meta property="og:title" content="BRICKFACE™ — Le bonnet qui fait sourire" />
-  <meta property="og:description" content="La balaclava Minifigure : sourire, langue, colère ou surprise… choisis ton expression. Testée sur les pistes." />
-  <meta property="og:image" content="assets/05-ski-portrait.jpg" />
+  <meta property="og:title" content="BRICKFACE — À chacun sa tête." />
+  <meta property="og:description" content="Duo, Trio ou Quatro ? Compose ton équipe de bonnes têtes." />
+  <meta property="og:url" content="https://samirneo.github.io/shop/" />
+  <meta property="og:image" content="https://samirneo.github.io/shop/assets/08-marketing-collection.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://samirneo.github.io/shop/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%98%9C%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23ffcf00'/%3E%3Ctext x='50' y='72' text-anchor='middle' font-size='72'%3E☺%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
-
-  <!-- ============ ANNONCE / MARQUEE TOP ============ -->
-  <div class="ticker ticker--top" aria-hidden="true">
-    <div class="ticker__track">
-      <span>🚚 LIVRAISON OFFERTE DÈS 50€</span><span>🔥 -30% AUJOURD'HUI AVEC LE CODE <b>BRICK30</b></span><span>😜 LE BONNET QUI FAIT SOURIRE</span><span>❄️ TESTÉ SUR LES PISTES</span><span>🚚 LIVRAISON OFFERTE DÈS 50€</span><span>🔥 -30% AUJOURD'HUI AVEC LE CODE <b>BRICK30</b></span><span>😜 LE BONNET QUI FAIT SOURIRE</span><span>❄️ TESTÉ SUR LES PISTES</span>
+  <a class="skip-link" href="#packs">Aller aux packs</a>
+  <div class="announcement"><span>DES BONNES TÊTES. DES BONS POTES.</span><span>Livraison offerte sur les 3 packs ↗</span></div>
+  <header class="nav">
+    <div class="nav__inner container">
+      <a class="brand" href="#top" aria-label="BRICKFACE, accueil"><span class="brand__icon" aria-hidden="true">☺</span>BRICK<span>FACE</span><sup>™</sup></a>
+      <nav aria-label="Navigation principale"><a href="#packs">Les packs</a><a href="#expressions">Les expressions</a><a href="#lookbook">En images</a><a href="#faq">FAQ</a></nav>
+      <button class="cart-trigger" id="openCart" aria-label="Ouvrir le panier, 0 bonnet"><span>Panier</span><span class="cart-count" id="cartCount">0</span></button>
     </div>
-  </div>
-
-  <!-- ============ HEADER / NAV ============ -->
-  <header class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="#top" class="nav__logo">
-        <span class="nav__brick">🧱</span>
-        <span class="nav__brand">BRICK<span>FACE</span></span>
-      </a>
-      <nav class="nav__links">
-        <a href="#produit">Le produit</a>
-        <a href="#expressions">Expressions</a>
-        <a href="#features">Pourquoi</a>
-        <a href="#avis">Avis</a>
-        <a href="#faq">FAQ</a>
-        <a href="#pack">Le pack</a>
-      </nav>
-      <div class="nav__actions">
-        <span class="nav__promo" id="navPromo">🔥 -30% aujourd'hui</span>
-        <button class="btn btn--cart" id="openCart" aria-label="Ouvrir le panier">
-          🛒 <span>Panier</span> <b class="cart-count" id="cartCount">0</b>
-        </button>
-      </div>
-    </div>
-    <div class="nav__progress" id="navProgress" aria-hidden="true"><span></span></div>
   </header>
-
   <main id="top">
-
-    <!-- ============ HERO ============ -->
-    <section class="hero">
-      <div class="hero__blobs" aria-hidden="true">
-        <span class="blob blob--1"></span>
-        <span class="blob blob--2"></span>
-        <span class="blob blob--3"></span>
+    <section class="pack-hero container" id="packs" aria-labelledby="heroTitle">
+      <div class="hero-intro">
+        <div><p class="eyebrow"><span class="dot"></span> LA COLLECTION BRICKFACE</p><h1 id="heroTitle">À CHACUN<br />SA <span class="highlight">TÊTE.</span></h1></div>
+        <div class="hero-intro__side"><p>À deux, à trois, à quatre.<br /><strong>Le même délire. Chacun son expression.</strong></p><p class="muted">Choisis ton pack, compose les visages et prépare la prochaine sortie de la bande.</p><a class="text-link" href="#expressions">Découvrir les 4 expressions <span>↗</span></a></div>
       </div>
-
-      <div class="hero__grid">
-        <div class="hero__copy">
-          <span class="pill">🔥 BEST-SELLER HIVER 2026</span>
-          <h1 class="hero__title">
-            SOIS TOI.<br />
-            <span class="hl-yellow">SOIS LEGO</span>
-            <span class="wobble">😜</span>
-          </h1>
-          <p class="hero__sub">
-            La <b>balaclava Minifigure</b> qui transforme ta tête en brique iconique.
-            Ultra chaude, ultra drôle, ultra photogénique. Ski, snowboard, ville… ou juste pour flex.
-          </p>
-
-          <div class="hero__badges">
-            <span class="chip">❄️ Protection hivernale</span>
-            <span class="chip">🧶 Tricot haute qualité</span>
-            <span class="chip">♾️ Unisexe</span>
-            <span class="chip">💨 Respirant</span>
+      <div class="pack-grid">
+        <article class="pack-card" data-pack-card="2">
+          <div class="pack-card__top"><span>01 / LE BINÔME</span><span class="saving">−12 %</span></div>
+          <div class="pack-art pack-art--duo" aria-label="Pack Duo : deux bonnets, Sourire et Langue">
+            <img src="assets/01-produit-sourire.jpg" alt="Bonnet Sourire du pack Duo" width="1200" height="1200" fetchpriority="high" decoding="async" />
+            <img src="assets/02-produit-langue.jpg" alt="Bonnet Langue du pack Duo" width="1200" height="1200" decoding="async" />
+            <span class="piece-count">×2</span>
           </div>
-
-          <div class="hero__cta">
-            <a href="#produit" class="btn btn--primary btn--xl">JE LE VEUX <span>🛒</span></a>
-            <a href="#avis" class="btn btn--ghost btn--xl">Voir les avis ⭐️⭐️⭐️⭐️⭐️</a>
+          <div class="pack-card__body"><div class="pack-card__name"><h2>DUO</h2><span>2 bonnets</span></div><p>Toi + ton partenaire de crime.</p><div class="pack-card__price"><strong>69,90 €</strong><del>79,80 €</del></div><p class="per-piece">34,95 € / bonnet · tu économises 9,90 €</p><button class="button button--outline" data-select-pack="2">Composer mon Duo <span>↗</span></button><span class="pack-card__delivery">Expressions au choix · Livraison offerte</span></div>
+        </article>
+        <article class="pack-card pack-card--featured" data-pack-card="3">
+          <div class="pack-card__top"><span>02 / LA PETITE BANDE</span><span class="saving">−17 %</span></div>
+          <div class="pack-art pack-art--trio" aria-label="Pack Trio : trois bonnets, Sourire, Langue et Colère">
+            <img src="assets/01-produit-sourire.jpg" alt="Bonnet Sourire du pack Trio" width="1200" height="1200" decoding="async" />
+            <img src="assets/02-produit-langue.jpg" alt="Bonnet Langue du pack Trio" width="1200" height="1200" decoding="async" />
+            <img src="assets/03-produit-colere.jpg" alt="Bonnet Colère du pack Trio" width="1200" height="1200" decoding="async" />
+            <span class="piece-count">×3</span>
           </div>
-
-          <div class="hero__proof">
-            <div class="avatars">
-              <span>😎</span><span>🤘</span><span>🧑‍🎤</span><span>🥶</span><span>+2k</span>
-            </div>
-            <p><b>2 947</b> têtes déjà converties · <b>4,9/5</b> ⭐️</p>
+          <div class="pack-card__body"><div class="pack-card__name"><h2>TRIO</h2><span>3 bonnets</span></div><p>Trois têtes. Zéro discrétion.</p><div class="pack-card__price"><strong>99,90 €</strong><del>119,70 €</del></div><p class="per-piece">33,30 € / bonnet · tu économises 19,80 €</p><button class="button button--yellow" data-select-pack="3">Composer mon Trio <span>↗</span></button><span class="pack-card__delivery">Expressions au choix · Livraison offerte</span></div>
+        </article>
+        <article class="pack-card" data-pack-card="4">
+          <div class="pack-card__top"><span>03 / L'ÉQUIPE AU COMPLET</span><span class="saving">−19 %</span></div>
+          <div class="pack-art pack-art--quatro" aria-label="Pack Quatro : quatre bonnets, un de chaque expression">
+            <img src="assets/01-produit-sourire.jpg" alt="Bonnet Sourire du pack Quatro" width="1200" height="1200" decoding="async" />
+            <img src="assets/02-produit-langue.jpg" alt="Bonnet Langue du pack Quatro" width="1200" height="1200" decoding="async" />
+            <img src="assets/03-produit-colere.jpg" alt="Bonnet Colère du pack Quatro" width="1200" height="1200" decoding="async" />
+            <img src="assets/04-produit-surprise.jpg" alt="Bonnet Surprise du pack Quatro" width="1200" height="1200" decoding="async" />
+            <span class="piece-count">×4</span>
           </div>
-        </div>
-
-        <div class="hero__visual">
-          <span class="sticker sticker--rot">SOIS LEGO®</span>
-          <span class="sticker sticker--price">-30%<br /><small>AUJOURD'HUI</small></span>
-          <div class="hero__imgwrap">
-            <img src="assets/06-ski-action.jpg" alt="Balaclava Minifigure en action sur les pistes — la touche jaune sur la neige" class="hero__img" width="800" height="1200" fetchpriority="high" decoding="async" />
-          </div>
-          <span class="sticker sticker--bottom">LE BONNET QUI FAIT SOURIRE &nbsp;↴</span>
-        </div>
+          <div class="pack-card__body"><div class="pack-card__name"><h2>QUATRO</h2><span>4 bonnets</span></div><p>Le crew entier passe au jaune.</p><div class="pack-card__price"><strong>129,90 €</strong><del>159,60 €</del></div><p class="per-piece">32,48 € / bonnet · tu économises 29,70 €</p><button class="button button--outline" data-select-pack="4">Composer mon Quatro <span>↗</span></button><span class="pack-card__delivery">Expressions au choix · Livraison offerte</span></div>
+        </article>
       </div>
-
-      <div class="hero__scroll">scroll ↓ c'est pas fini la hype</div>
+      <div class="hero-foot"><span>01 — CHOISIS LE PACK</span><span>02 — MIXE LES EXPRESSIONS</span><span>03 — ÉQUIPE LA BANDE</span><span class="demo-label">Boutique démo · aucun débit</span></div>
     </section>
-
-    <!-- ============ MARQUEE BAND ============ -->
-    <div class="band">
-      <div class="ticker ticker--band">
-        <div class="ticker__track">
-          <span>STYLE LEGO®</span><span>★</span><span>PROTECTION TOTALE</span><span>★</span><span>LOOK ICONIQUE</span><span>★</span><span>FAIT POUR LA NEIGE</span><span>★</span><span>GOOFY AESTHETIC</span><span>★</span><span>STYLE LEGO®</span><span>★</span><span>PROTECTION TOTALE</span><span>★</span><span>LOOK ICONIQUE</span><span>★</span><span>FAIT POUR LA NEIGE</span><span>★</span><span>GOOFY AESTHETIC</span><span>★</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ============ TRUST BAR ============ -->
-    <section class="trust">
-      <div class="trust__item"><span>🚚</span><div><b>Livraison offerte</b><small>dès 50€ · 48-72h</small></div></div>
-      <div class="trust__item"><span>↩️</span><div><b>Satisfait ou remboursé</b><small>30 jours</small></div></div>
-      <div class="trust__item"><span>🔒</span><div><b>Paiement sécurisé</b><small>100% crypté</small></div></div>
-      <div class="trust__item"><span>😜</span><div><b>Sourire garanti</b><small>ou on te rend les sous</small></div></div>
-    </section>
-    <!-- ============ PRODUIT ============ -->
-    <section class="product" id="produit">
-      <div class="product__grid">
-
-        <!-- GALERIE -->
-        <div class="gallery" id="gallery">
-          <div class="gallery__tags">
-            <span class="tag tag--hot">🔥 HYPE</span>
-            <span class="tag">🚚 Prêt à expédier</span>
-            <span class="tag">📸 6 photos</span>
-          </div>
-
-          <div class="gallery__main" id="galleryMain">
-            <img id="mainImg" src="assets/01-produit-sourire.jpg" alt="Expression Sourire — balaclava Minifigure, vue studio" width="1200" height="1200" />
-            <button class="gallery__nav gallery__nav--prev" id="prevImg" aria-label="Image précédente">‹</button>
-            <button class="gallery__nav gallery__nav--next" id="nextImg" aria-label="Image suivante">›</button>
-            <button class="gallery__zoom" id="zoomBtn" aria-label="Agrandir l'image">🔍</button>
-            <span class="gallery__counter"><span id="imgIndex">1</span>/<span id="imgTotal">6</span></span>
-          </div>
-
-          <div class="gallery__dots" id="dots" role="group" aria-label="Choisir une image"></div>
-
-          <div class="gallery__thumbs" id="thumbs">
-            <button class="gallery__thumb is-active" data-src="assets/01-produit-sourire.jpg" data-alt="Sourire — l'expression signature" aria-label="Voir : Sourire">
-              <img src="assets/thumbs/01-produit-sourire.jpg" alt="" loading="lazy" />
-            </button>
-            <button class="gallery__thumb" data-src="assets/02-produit-langue.jpg" data-alt="Langue — le tongue-out brodé" aria-label="Voir : Langue">
-              <img src="assets/thumbs/02-produit-langue.jpg" alt="" loading="lazy" />
-            </button>
-            <button class="gallery__thumb" data-src="assets/03-produit-colere.jpg" data-alt="Colère — sourcils froncés, bouche en O" aria-label="Voir : Colère">
-              <img src="assets/thumbs/03-produit-colere.jpg" alt="" loading="lazy" />
-            </button>
-            <button class="gallery__thumb" data-src="assets/04-produit-surprise.jpg" data-alt="Surprise — la bouche grande ouverte" aria-label="Voir : Surprise">
-              <img src="assets/thumbs/04-produit-surprise.jpg" alt="" loading="lazy" />
-            </button>
-            <button class="gallery__thumb" data-src="assets/05-ski-portrait.jpg" data-alt="Portrait sur les pistes — montagne &amp; sommets" data-fit="center 26%" aria-label="Voir : portrait ski">
-              <img src="assets/thumbs/05-ski-portrait.jpg" alt="" loading="lazy" />
-            </button>
-            <button class="gallery__thumb" data-src="assets/06-ski-action.jpg" data-alt="Action sur la neige — le bonnet en mouvement" data-fit="center 26%" aria-label="Voir : action">
-              <img src="assets/thumbs/06-ski-action.jpg" alt="" loading="lazy" />
-            </button>
+    <div class="statement" aria-hidden="true">BONNES TÊTES <span>✳</span> MAUVAISE DISCRÉTION <span>✳</span> BRICKFACE</div>
+    <section class="product container section" id="produit" aria-labelledby="productTitle">
+      <div class="section-heading"><div><p class="eyebrow">TON PACK, TES RÈGLES</p><h2 id="productTitle">COMPOSE TON <span class="outline-word">ÉQUIPE.</span></h2></div><p>Des visages différents ou tous le même ?<br />À toi de jouer.</p></div>
+      <div class="product-grid">
+        <div class="gallery">
+          <div class="gallery__main"><img id="mainImg" src="assets/01-produit-sourire.jpg" alt="Balaclava jaune, expression Sourire — vue de face" width="1200" height="1200" loading="lazy" decoding="async" /><span class="gallery__index" id="imageCounter">01 / 08</span><button class="zoom-button" id="zoomBtn" aria-label="Agrandir la photo">↗ <span>Agrandir</span></button><button class="gallery-arrow gallery-arrow--prev" id="prevImg" aria-label="Photo précédente">←</button><button class="gallery-arrow gallery-arrow--next" id="nextImg" aria-label="Photo suivante">→</button></div>
+          <p class="gallery__caption" id="imageCaption" aria-live="polite">Sourire — la bonne humeur en version tricot.</p>
+          <div class="gallery__thumbs" id="thumbs" aria-label="Choisir une photo">
+            <button class="gallery-thumb is-active" data-image="0" aria-label="Voir Sourire" aria-pressed="true"><img src="assets/thumbs/01-produit-sourire.jpg" alt="" width="320" height="320" loading="lazy" /></button>
+            <button class="gallery-thumb" data-image="1" aria-label="Voir Langue" aria-pressed="false"><img src="assets/thumbs/02-produit-langue.jpg" alt="" width="320" height="320" loading="lazy" /></button>
+            <button class="gallery-thumb" data-image="2" aria-label="Voir Colère" aria-pressed="false"><img src="assets/thumbs/03-produit-colere.jpg" alt="" width="320" height="320" loading="lazy" /></button>
+            <button class="gallery-thumb" data-image="3" aria-label="Voir Surprise" aria-pressed="false"><img src="assets/thumbs/04-produit-surprise.jpg" alt="" width="320" height="320" loading="lazy" /></button>
+            <button class="gallery-thumb" data-image="4" aria-label="Voir le portrait en montagne" aria-pressed="false"><img src="assets/thumbs/05-ski-portrait.jpg" alt="" width="320" height="320" loading="lazy" /></button>
+            <button class="gallery-thumb" data-image="5" aria-label="Voir la photo sur les pistes" aria-pressed="false"><img src="assets/thumbs/06-ski-action.jpg" alt="" width="320" height="320" loading="lazy" /></button>
+            <button class="gallery-thumb" data-image="6" aria-label="Voir la campagne BRICKFACE" aria-pressed="false"><img src="assets/thumbs/07-marketing-impact.jpg" alt="" width="320" height="320" loading="lazy" /></button>
+            <button class="gallery-thumb" data-image="7" aria-label="Voir la collection" aria-pressed="false"><img src="assets/thumbs/08-marketing-collection.jpg" alt="" width="320" height="320" loading="lazy" /></button>
           </div>
         </div>
-
-        <!-- ACHAT -->
         <div class="buybox">
-          <div class="buybox__rating">
-            <span class="stars">★★★★★</span>
-            <span><b>4,9</b> · 312 avis vérifiés</span>
-          </div>
-
-          <h2 class="buybox__title">LEGO® Balaclava <span>Minifigure</span></h2>
-          <p class="buybox__tag">« Le style LEGO® en toute saison » · Protection totale</p>
-
-          <div class="buybox__price">
-            <span class="price-now" id="priceNow">39,90 €</span>
-            <span class="price-old">59,90 €</span>
-            <span class="price-save">Tu économises 20 € 🤑</span>
-          </div>
-
-          <div class="buybox__stock">
-            <div class="stockbar"><span class="stockbar__fill" style="width: 78%"></span></div>
-            <p>⚠️ <b>Stock limité</b> — plus que <b id="stockNum">41</b> pièces en jaune.</p>
-          </div>
-
-          <!-- Couleur -->
-          <div class="field">
-            <label>Couleur <b id="colorLabel">Jaune Iconique</b></label>
-            <div class="swatches" id="swatches">
-              <button class="swatch is-active" data-name="Jaune Iconique" data-emoji="🟡" style="--c:#FFCF00" aria-label="Jaune"></button>
-              <button class="swatch" data-name="Noir Stealth" data-emoji="⚫" style="--c:#141414" aria-label="Noir"></button>
-              <button class="swatch" data-name="Bleu Piste" data-emoji="🔵" style="--c:#2D7BFF" aria-label="Bleu"></button>
-              <button class="swatch" data-name="Rose Hype" data-emoji="🩷" style="--c:#FF7AC6" aria-label="Rose"></button>
-            </div>
-          </div>
-
-          <!-- Quantité -->
-          <div class="field field--qty">
-            <label>Quantité</label>
-            <div class="qty">
-              <button id="qtyMinus" aria-label="Moins">−</button>
-              <input id="qtyInput" type="number" value="1" min="1" max="10" />
-              <button id="qtyPlus" aria-label="Plus">+</button>
-            </div>
-          </div>
-
-
-          <div class="bundles" id="bundles">
-            <button class="bundle is-active" data-qty="1">1 pièce<div><b>39,90 €</b></div></button>
-            <button class="bundle bundle--best" data-qty="2"><span class="bundle__flag">LE PLUS POPULAIRE</span>2 pièces<div><b>69,90 €</b><small>-12%</small></div></button>
-            <button class="bundle" data-qty="3">3 pièces<div><b>99,90 €</b><small>-17%</small></div></button>
-          </div>
-
-          <button class="btn btn--primary btn--xl btn--block" id="addToCart">
-            AJOUTER AU PANIER · <span id="btnPrice">39,90 €</span> 🛒
-          </button>
-
-          <button class="btn btn--paypal btn--block">⚡ Paiement express</button>
-
-          <ul class="buybox__list">
-            <li>✅ Le bonnet qui fait sourire (testé &amp; approuvé)</li>
-            <li>✅ Coupe parfaite unisexe · s'adapte à toutes les têtes</li>
-            <li>✅ Doublure douce + bande élastique haute résistance</li>
-            <li>✅ Expédié sous 24h depuis la France 🇫🇷</li>
-          </ul>
-
-          <div class="live" id="liveViewers">👀 <b>18 personnes</b> regardent ce produit en ce moment</div>
+          <div class="buybox__header"><span class="eyebrow">BALACLAVAS BRICKFACE</span><span class="color-note"><span class="dot"></span> Jaune iconique</span></div>
+          <div class="pack-selector" role="group" aria-label="Choisir le pack"><button data-pack="2" class="is-active" aria-pressed="true">Duo <small>2 bonnets</small></button><button data-pack="3" aria-pressed="false">Trio <small>3 bonnets</small></button><button data-pack="4" aria-pressed="false">Quatro <small>4 bonnets</small></button></div>
+          <div class="selected-price" aria-live="polite"><strong id="priceNow">69,90 €</strong><div><del id="priceOld">79,80 €</del><span id="priceSaving">Économie : 9,90 €</span></div></div>
+          <div class="composer-head"><h3>Choisis chaque expression</h3><span id="pieceLabel">2 bonnets au choix</span></div>
+          <div class="expression-slots" id="expressionSlots"></div>
+          <div class="quantity-row"><label for="qtyInput">Nombre de packs</label><div class="quantity-control"><button id="qtyMinus" aria-label="Un pack de moins">−</button><input id="qtyInput" type="number" min="1" max="10" value="1" inputmode="numeric" /><button id="qtyPlus" aria-label="Un pack de plus">+</button></div></div>
+          <button class="button button--yellow button--full" id="addToCart">Ajouter mon Duo · <span id="btnPrice">69,90 €</span> <span>↗</span></button>
+          <p class="buybox__delivery">↗ Livraison offerte sur ton pack <span>2 à 4 bonnets · expressions personnalisables</span></p>
+          <p class="demo-note">Tu explores une boutique de démonstration. Le panier fonctionne, le paiement est simulé.</p>
         </div>
       </div>
     </section>
-
-    <!-- ============ EXPRESSIONS (4 titres) ============ -->
-    <section class="expressions" id="expressions">
-      <div class="section__head">
-        <span class="section__kicker">4 Expressions brodées à la main</span>
-        <h2 class="section__title">Choisis ta <span class="hl-yellow">tête</span> 😜</h2>
-        <p class="section__sub">Chaque bonnet porte un visage différent. Clique sur celui qui te ressemble → il s'affiche dans la galerie.</p>
-      </div>
-
-      <div class="expressions__grid">
-        <button type="button" class="ecard" data-goto="0" aria-label="Afficher l'expression Sourire dans la galerie">
-          <span class="ecard__media">
-            <img src="assets/01-produit-sourire.jpg" alt="Balaclava Minifigure — expression Sourire" loading="lazy" decoding="async" width="1200" height="1200" />
-            <span class="ecard__num">01</span>
-          </span>
-          <span class="ecard__body">
-            <span class="ecard__title">Sourire</span>
-            <span class="ecard__text">Le classique brodé : yeux malicieux et grand sourire. Celui qui met tout le monde de bonne humeur.</span>
-            <span class="ecard__go">Voir dans la galerie →</span>
-          </span>
-        </button>
-
-        <button type="button" class="ecard" data-goto="1" aria-label="Afficher l'expression Langue dans la galerie">
-          <span class="ecard__media">
-            <img src="assets/02-produit-langue.jpg" alt="Balaclava Minifigure — expression Langue" loading="lazy" decoding="async" width="1200" height="1200" />
-            <span class="ecard__num">02</span>
-          </span>
-          <span class="ecard__body">
-            <span class="ecard__title">Langue</span>
-            <span class="ecard__text">Le tongue-out légendaire, langue rouge brodée. Celle qui fait tourner les têtes au télésiège.</span>
-            <span class="ecard__go">Voir dans la galerie →</span>
-          </span>
-        </button>
-
-        <button type="button" class="ecard" data-goto="2" aria-label="Afficher l'expression Colère dans la galerie">
-          <span class="ecard__media">
-            <img src="assets/03-produit-colere.jpg" alt="Balaclava Minifigure — expression Colère" loading="lazy" decoding="async" width="1200" height="1200" />
-            <span class="ecard__num">03</span>
-          </span>
-          <span class="ecard__body">
-            <span class="ecard__title">Colère</span>
-            <span class="ecard__text">Sourcils bien froncés et bouche en O. Parfaite pour les lundis matin et les files d'attente.</span>
-            <span class="ecard__go">Voir dans la galerie →</span>
-          </span>
-        </button>
-
-        <button type="button" class="ecard" data-goto="3" aria-label="Afficher l'expression Surprise dans la galerie">
-          <span class="ecard__media">
-            <img src="assets/04-produit-surprise.jpg" alt="Balaclava Minifigure — expression Surprise" loading="lazy" decoding="async" width="1200" height="1200" />
-            <span class="ecard__num">04</span>
-          </span>
-          <span class="ecard__body">
-            <span class="ecard__title">Surprise</span>
-            <span class="ecard__text">La bouche grande ouverte, œil plissé. Exactement le visage qu'on fait en voyant le prix.</span>
-            <span class="ecard__go">Voir dans la galerie →</span>
-          </span>
-        </button>
+    <section class="expressions container section" id="expressions" aria-labelledby="expressionsTitle">
+      <div class="section-heading"><div><p class="eyebrow">QUATRE VISAGES. UNE SEULE VIBE.</p><h2 id="expressionsTitle">C'EST QUOI,<br />TA <span class="highlight">TÊTE ?</span></h2></div><p>Clique sur une expression pour la voir en grand.<br />Tu pourras l'ajouter à chaque bonnet de ton pack.</p></div>
+      <div class="expression-grid">
+        <button class="expression-card" data-preview="0" aria-label="Découvrir l'expression Sourire"><div class="expression-card__image"><img src="assets/01-produit-sourire.jpg" alt="Balaclava jaune Sourire, vue complète" width="1200" height="1200" loading="lazy" decoding="async" /><span>01</span></div><div class="expression-card__caption"><h3>SOURIRE</h3><span>↗</span><p>Le pote toujours de bonne humeur.</p></div></button>
+        <button class="expression-card" data-preview="1" aria-label="Découvrir l'expression Langue"><div class="expression-card__image"><img src="assets/02-produit-langue.jpg" alt="Balaclava jaune Langue, vue complète" width="1200" height="1200" loading="lazy" decoding="async" /><span>02</span></div><div class="expression-card__caption"><h3>LANGUE</h3><span>↗</span><p>Le dernier à devenir sérieux.</p></div></button>
+        <button class="expression-card" data-preview="2" aria-label="Découvrir l'expression Colère"><div class="expression-card__image"><img src="assets/03-produit-colere.jpg" alt="Balaclava jaune Colère, vue complète" width="1200" height="1200" loading="lazy" decoding="async" /><span>03</span></div><div class="expression-card__caption"><h3>COLÈRE</h3><span>↗</span><p>Le râleur préféré de l'équipe.</p></div></button>
+        <button class="expression-card" data-preview="3" aria-label="Découvrir l'expression Surprise"><div class="expression-card__image"><img src="assets/04-produit-surprise.jpg" alt="Balaclava jaune Surprise, vue complète" width="1200" height="1200" loading="lazy" decoding="async" /><span>04</span></div><div class="expression-card__caption"><h3>SURPRISE</h3><span>↗</span><p>Celui qui découvre le programme.</p></div></button>
       </div>
     </section>
-
-    <!-- ============ FEATURES ============ -->
-    <section class="features" id="features">
-      <div class="section__head">
-        <span class="section__kicker">POURQUOI TOUT LE MONDE EN VEUT</span>
-        <h2 class="section__title">6 raisons de <span class="hl-yellow">craquer</span> 🤯</h2>
-      </div>
-
-      <div class="features__grid">
-        <article class="fcard">
-          <div class="fcard__ico" style="--c:#FFCF00">⭐️</div>
-          <h3>Design Iconique</h3>
-          <p>Le style LEGO® reconnaissable au premier regard. Tu mets le bonnet, tout le monde sourit.</p>
-        </article>
-        <article class="fcard">
-          <div class="fcard__ico" style="--c:#FF6B6B">🧶</div>
-          <h3>Tricot Haute Qualité</h3>
-          <p>Doux, chaud et ultra confortable. Le genre de matière que tu ne veux plus quitter.</p>
-        </article>
-        <article class="fcard">
-          <div class="fcard__ico" style="--c:#5BC0EB">🛡️</div>
-          <h3>Coupe Parfaite</h3>
-          <p>S'adapte à toutes les têtes et reste bien en place, même quand tu dévales la piste.</p>
-        </article>
-        <article class="fcard">
-          <div class="fcard__ico" style="--c:#9BE564">❄️</div>
-          <h3>Protection Hivernale</h3>
-          <p>Idéal pour le ski, le snowboard, la ville ou les aventures outdoor. Zéro frisson.</p>
-        </article>
-        <article class="fcard">
-          <div class="fcard__ico" style="--c:#FFCF00">💨</div>
-          <h3>Respirant</h3>
-          <p>Reste au chaud sans faire transpirer. La tête au sec, la vibe au max.</p>
-        </article>
-        <article class="fcard">
-          <div class="fcard__ico" style="--c:#C77DFF">♾️</div>
-          <h3>Unisexe</h3>
-          <p>Pour tous les fans de LEGO® — petits, grands, skieurs et poseurs de selfies.</p>
-        </article>
+    <section class="lookbook section" id="lookbook" aria-labelledby="lookbookTitle">
+      <div class="container"><div class="section-heading"><div><p class="eyebrow">DU STUDIO AUX SOMMETS</p><h2 id="lookbookTitle">ON SORT<br />DU <span>CADRE.</span></h2></div><p>Un peu de jaune dans le grand blanc.<br />Le look BRICKFACE, en situation.</p></div>
+        <div class="lookbook-grid"><button class="lookbook-photo" data-preview="4" aria-label="Agrandir le portrait en montagne"><img src="assets/05-ski-portrait.jpg" alt="Balaclava BRICKFACE portée en montagne, portrait devant les sommets enneigés" width="800" height="1200" loading="lazy" decoding="async" /><span>01 / AU GRAND AIR <b>↗</b></span></button><button class="lookbook-photo" data-preview="5" aria-label="Agrandir la photo sur les pistes"><img src="assets/06-ski-action.jpg" alt="Balaclava BRICKFACE portée sur la neige" width="800" height="1200" loading="lazy" decoding="async" /><span>02 / EN MODE PISTE <b>↗</b></span></button></div>
+        <div class="lookbook-footer"><p>La prochaine photo de groupe<br /><strong>va avoir une autre tête.</strong></p><a class="button button--yellow" href="#packs">Trouver le pack de la bande <span>↗</span></a></div>
       </div>
     </section>
-
-
-    <!-- ============ LIFESTYLE ============ -->
-    <section class="lifestyle">
-      <div class="lifestyle__grid">
-        <div class="lifestyle__img">
-          <img src="assets/05-ski-portrait.jpg" alt="Balaclava Minifigure en montagne — portrait sous les sommets enneigés" width="800" height="1200" loading="lazy" decoding="async" />
-          <span class="sticker sticker--rot2">LOOK ICONIQUE 🔥</span>
-        </div>
-        <div class="lifestyle__copy">
-          <span class="section__kicker">EN MODE OUTDOOR</span>
-          <h2 class="section__title">Le look iconique <span class="hl-yellow">qui fait sourire</span> 😄</h2>
-          <p>
-            Sur les pistes, en festival ou en bas de chez toi : la balaclava Minifigure attire tous les regards.
-            Ajoute tes goggles préférés, un tongue-out légendaire, et deviens le boss de la station.
-          </p>
-          <div class="quote">
-            <span class="quote__mark">“</span>
-            <p>J'ai mis 3 h à sortir du télésiège tellement les gens voulaient une photo. Meilleur achat de l'hiver.</p>
-            <cite>— Léo, snowboardeur converti 🤙</cite>
-          </div>
-          <a href="#produit" class="btn btn--primary btn--xl">DEVENIR UNE BRIQUE 🧱</a>
-        </div>
-      </div>
+    <section class="details container section" aria-labelledby="detailsTitle">
+      <div class="section-heading"><div><p class="eyebrow">DE PLUS PRÈS</p><h2 id="detailsTitle">LE DÉTAIL<br />FAIT LE <span class="outline-word">DÉLIRE.</span></h2></div><p>Maille visible, silhouette de brique,<br />visages graphiques : regarde de plus près.</p></div>
+      <div class="detail-grid"><article><span>01 — LA SILHOUETTE</span><h3>Une vraie tête<br />de brique.</h3><p>Le sommet cylindrique donne au bonnet son profil reconnaissable au premier coup d'œil.</p></article><article><span>02 — LA MATIÈRE</span><h3>Le tricot,<br />en gros plan.</h3><p>Des photos studio complètes pour observer la maille, les finitions et la forme du bonnet.</p></article><article><span>03 — LA COMPOSITION</span><h3>Une équipe<br />à ta façon.</h3><p>Mélange les quatre expressions ou choisis plusieurs fois la même. Chaque bonnet de ton pack a son propre choix.</p></article></div>
+      <div class="detail-gallery"><button data-detail="0" aria-label="Agrandir le détail Sourire blanc"><img src="assets/09-reference-sourire-blanc.jpg" alt="Vue de référence : sourire blanc" width="1200" height="1200" loading="lazy" /><span>SOURIRE BLANC ↗</span></button><button data-detail="1" aria-label="Agrandir le détail Sourire simple"><img src="assets/10-reference-sourire-simple.jpg" alt="Vue de référence : sourire simple" width="1200" height="1200" loading="lazy" /><span>SOURIRE SIMPLE ↗</span></button><button data-detail="2" aria-label="Agrandir le détail Dents quadrillées"><img src="assets/11-reference-dents-quadrillees.jpg" alt="Vue de référence : dents quadrillées" width="1200" height="1200" loading="lazy" /><span>DENTS QUADRILLÉES ↗</span></button></div><p class="reference-note">Vues de référence des finitions. Les quatre expressions proposées dans les packs sont Sourire, Langue, Colère et Surprise.</p>
     </section>
-
-    <!-- ============ DETAILS ============ -->
-    <section class="details">
-      <div class="section__head">
-        <span class="section__kicker">DANS LES DÉTAILS</span>
-        <h2 class="section__title">Soignée jusqu'au <span class="hl-yellow">sommet</span> 🔍</h2>
-      </div>
-      <div class="details__grid">
-        <article class="dcard"><div class="dcard__ico">😜</div><h4>Design LEGO® authentique</h4><p>Yeux malicieux, langue qui sort : la tête de minifigure culte.</p></article>
-        <article class="dcard"><div class="dcard__ico">🧱</div><h4>Détails soignés jusqu'au sommet</h4><p>L'embout « brique » en haut du bonnet, rien n'est laissé au hasard.</p></article>
-        <article class="dcard"><div class="dcard__ico">🎽</div><h4>Bande élastique haute résistance</h4><p>Tient parfaitement, ne se déforme pas, saison après saison.</p></article>
-        <article class="dcard"><div class="dcard__ico">☁️</div><h4>Doublure douce et chaude</h4><p>Confort premium contre la peau, chaleur maximale en conditions extrêmes.</p></article>
-      </div>
-    </section>
-
-    <!-- ============ 3 STYLES DE BOUCHE ============ -->
-    <section class="mouths" id="bouches">
-      <div class="section__head">
-        <span class="section__kicker">3 styles de bouche</span>
-        <h2 class="section__title">Laquelle tu <span class="hl-yellow">choisis</span> ? 🤔</h2>
-        <p class="section__sub">Même bonnet, trois façons d'ouvrir la bouche. Le seul dilemme sérieux de l'hiver.</p>
-      </div>
-
-      <div class="mouths__grid">
-        <article class="mcard">
-          <span class="mcard__media">
-            <img src="assets/09-reference-sourire-blanc.jpg" alt="Modèle Sourire blanc — broderie blanche pleine" loading="lazy" decoding="async" width="1200" height="1200" />
-            <span class="mcard__tag">Modèle 01</span>
-          </span>
-          <div class="mcard__body">
-            <h3>Sourire blanc</h3>
-            <p>Le sourire plein et lumineux, broderie blanche bien nette. Le plus demandé, et pour cause.</p>
-          </div>
-        </article>
-
-        <article class="mcard">
-          <span class="mcard__media">
-            <img src="assets/10-reference-sourire-simple.jpg" alt="Modèle Sourire simple — trait épuré" loading="lazy" decoding="async" width="1200" height="1200" />
-            <span class="mcard__tag">Modèle 02</span>
-          </span>
-          <div class="mcard__body">
-            <h3>Sourire simple</h3>
-            <p>Un seul trait, zéro chichi. Minimal, épuré, intemporel — le choix des puristes discrets.</p>
-          </div>
-        </article>
-
-        <article class="mcard">
-          <span class="mcard__media">
-            <img src="assets/11-reference-dents-quadrillees.jpg" alt="Modèle Dents quadrillées — motif grille façon brique" loading="lazy" decoding="async" width="1200" height="1200" />
-            <span class="mcard__tag">Modèle 03</span>
-          </span>
-          <div class="mcard__body">
-            <h3>Dents quadrillées</h3>
-            <p>La grille iconique façon brique. Pour ceux qui veulent que tout le monde remarque le détail.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ============ IMPACT / PREUVE SOCIALE ============ -->
-    <section class="impact" id="impact">
-      <div class="impact__grid">
-        <div class="impact__img">
-          <img src="assets/07-marketing-impact.jpg" alt="Visuel campagne BRICKFACE — la balaclava Minifigure en situation" loading="lazy" decoding="async" width="1122" height="1402" />
-          <span class="sticker sticker--impact">+2 947 🧱</span>
-        </div>
-        <div class="impact__copy">
-          <span class="section__kicker">Ils ont adopté la brique</span>
-          <h2 class="section__title">Le bonnet qui fait <span class="hl-yellow">tourner les têtes</span></h2>
-          <p>Depuis le premier drop, ce sont des milliers de skieurs, de riders et de poseurs de selfies qui ont adopté la Minifigure. La preuve en chiffres :</p>
-          <div class="impact__stats">
-            <div class="stat"><b>2 947</b><small>Têtes converties</small></div>
-            <div class="stat"><b>4,9/5</b><small>Sur 312 avis</small></div>
-            <div class="stat"><b>48h</b><small>Livraison France</small></div>
-            <div class="stat"><b>30j</b><small>Pour changer d'avis</small></div>
-          </div>
-          <a href="#avis" class="btn btn--ghost btn--xl">LIRE LES AVIS ⭐️</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ AVIS ============ -->
-    <section class="reviews" id="avis">
-      <div class="section__head">
-        <span class="section__kicker">LA COMMUNAUTÉ PARLE</span>
-        <h2 class="section__title">4,9/5 sur <span class="hl-yellow">312 avis</span> ⭐️⭐️⭐️⭐️⭐️</h2>
-      </div>
-      <div class="reviews__grid">
-        <article class="review">
-          <span class="review__stars">★★★★★</span>
-          <h4>« Le bonnet qui fait sourire »</h4>
-          <p>Porté toute la semaine de ski, chaud, drôle, tout le monde me demandait où je l'avais eu. Banger total.</p>
-          <div class="review__author"><span>🧑‍🎤</span> Camille · Achat vérifié</div>
-        </article>
-        <article class="review">
-          <span class="review__stars">★★★★★</span>
-          <h4>Qualité au top</h4>
-          <p>Le tricot est épais et doux, la coupe tient bien sur ma tête. Franchement mieux que ce que j'imaginais.</p>
-          <div class="review__author"><span>🧔</span> Yanis · Achat vérifié</div>
-        </article>
-        <article class="review">
-          <span class="review__stars">★★★★★</span>
-          <h4>Effet garanti en soirée 🎉</h4>
-          <p>Acheté pour le délire, finalement je le mets tout le temps. Unisexe confirmé, ma copine me l'a piqué.</p>
-          <div class="review__author"><span>👱</span> Maxime · Achat vérifié</div>
-        </article>
-        <article class="review">
-          <span class="review__stars">★★★★☆</span>
-          <h4>Parfait pour le snow</h4>
-          <p>Respirant et vraiment chaud, zéro buée sur les goggles. J'enlève une étoile car j'en voulais 2 autres, rupture 😅</p>
-          <div class="review__author"><span>🏂</span> Sarah · Achat vérifié</div>
-        </article>
-      </div>
-    </section>
-
-
-    <!-- ============ FAQ ============ -->
-    <section class="faq" id="faq">
-      <div class="section__head">
-        <span class="section__kicker">ON RÉPOND À TOUT</span>
-        <h2 class="section__title">Questions <span class="hl-yellow">fréquentes</span> 🤔</h2>
-      </div>
-      <div class="faq__list">
-        <details class="faq__item" open>
-          <summary>Est-ce que ça tient vraiment chaud ? ❄️</summary>
-          <p>Oui ! Le tricot épais + la doublure douce protègent toute la tête et le cou. Idéal pour le ski, le snowboard et les hivers urbains. Et comme c'est respirant, tu restes au chaud sans transpirer.</p>
-        </details>
-        <details class="faq__item">
-          <summary>Ça va à toutes les tailles de tête ? 🧢</summary>
-          <p>La balaclava est extensible et unisexe : elle s'adapte à toutes les têtes (enfants comme adultes) grâce à sa coupe parfaite et sa bande élastique haute résistance.</p>
-        </details>
-        <details class="faq__item">
-          <summary>Je peux mettre mes lunettes de ski par-dessus ? 🥽</summary>
-          <p>Carrément — c'est fait pour. Les goggles se posent sans souci par-dessus le bonnet, comme sur nos photos sur les pistes. Zéro pression, zéro buée.</p>
-        </details>
-        <details class="faq__item">
-          <summary>Comment je l'entretiens ? 🧺</summary>
-          <p>Lavage à la main ou programme délicat à 30°C, séchage à plat. Évite le sèche-linge pour garder la forme et la douceur au top.</p>
-        </details>
-        <details class="faq__item">
-          <summary>Quels sont les délais de livraison ? 🚚</summary>
-          <p>Expédition sous 24h. Livraison en France en 48-72h, offerte dès 50€ d'achat. Tu reçois un numéro de suivi dès l'expédition.</p>
-        </details>
-        <details class="faq__item">
-          <summary>Et si je n'aime pas ? ↩️</summary>
-          <p>Satisfait ou remboursé 30 jours. Tu reçois le bonnet, tu le portes, et si tu ne souris pas… on te rembourse. Sans blague.</p>
-        </details>
-      </div>
-    </section>
-
-    <!-- ============ PACK / COLLECTION ============ -->
-    <section class="pack" id="pack">
-      <div class="pack__grid">
-        <div class="pack__copy">
-          <span class="section__kicker">Offre station</span>
-          <h2 class="section__title">Le pack duo à <span class="hl-yellow">69,90 €</span> 😱</h2>
-          <p>Deux bonnets, deux expressions, un seul prix. Tu en gardes un, tu offres l'autre — ou tu changes de tête à chaque matinée.</p>
-          <ul class="pack__list">
-            <li>✅ 2 balaclavas Minifigure au choix</li>
-            <li>✅ <b>-12%</b> par rapport à l'unité</li>
-            <li>✅ Livraison offerte + expédition sous 24h 🇫🇷</li>
-            <li>✅ Retour 30 jours, sans discuter</li>
-          </ul>
-          <div class="pack__price">
-            <b>69,90 €</b><span>79,80 €</span><em>tu économises 9,90 €</em>
-          </div>
-          <button type="button" class="btn btn--primary btn--xl" id="packBundle">JE PRENDS LE PACK 🛒</button>
-        </div>
-        <div class="pack__media">
-          <img src="assets/08-marketing-collection.jpg" alt="Collection BRICKFACE — les balaclavas Minifigure réunies" loading="lazy" decoding="async" width="1122" height="1402" />
-          <span class="sticker sticker--pack">PACK<br /><small>-12% AUJOURD'HUI</small></span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CTA FINAL ============ -->
-    <section class="cta">
-      <div class="cta__inner">
-        <span class="sticker sticker--rot3">LAST CALL 🔥</span>
-        <h2>Prêt à devenir une <span>brique</span> ? 🧱</h2>
-        <p>Stock limité, offre -30% qui expire ce soir. Ne laisse pas passer le bonnet le plus hype de l'hiver.</p>
-        <div class="cta__count">
-          <div class="cta__unit"><span id="cdH">04</span><small>Heures</small></div>
-          <div class="cta__unit"><span id="cdM">12</span><small>Min</small></div>
-          <div class="cta__unit"><span id="cdS">45</span><small>Sec</small></div>
-        </div>
-        <a href="#produit" class="btn btn--primary btn--xl">JE LE VEUX MAINTENANT 🛒</a>
-        <p class="cta__note">🔒 Paiement sécurisé · 🚚 Livraison offerte dès 50€ · ↩️ 30 jours satisfait ou remboursé</p>
-      </div>
-    </section>
+    <section class="faq container section" id="faq" aria-labelledby="faqTitle"><div><p class="eyebrow">AVANT DE FAIRE ÉQUIPE</p><h2 id="faqTitle">UNE<br /><span class="highlight">QUESTION ?</span></h2><p class="muted">Les réponses, sans détour.</p></div><div class="faq-list">
+      <details open><summary>Qu'est-ce qu'il y a dans chaque pack ?<span>+</span></summary><p>Le Duo contient 2 bonnets, le Trio 3 et le Quatro 4. Tous sont présentés en jaune iconique. Choisis une expression pour chaque bonnet dans le configurateur.</p></details>
+      <details><summary>Peut-on mélanger les expressions ?<span>+</span></summary><p>Oui. Sourire, Langue, Colère et Surprise peuvent être mélangées librement. Tu peux aussi choisir plusieurs fois le même visage.</p></details>
+      <details><summary>Comment fonctionnent les prix ?<span>+</span></summary><p>Le Duo coûte 69,90 €, le Trio 99,90 € et le Quatro 129,90 €. Les économies affichées sont calculées par rapport au prix unitaire de 39,90 €. Le panier ajoute des packs complets, avec les expressions que tu as choisies.</p></details>
+      <details><summary>La livraison est-elle comprise ?<span>+</span></summary><p>Dans cette démonstration, la livraison est offerte dès 50 € : chacun des trois packs atteint ce montant. Les délais et conditions d'une boutique réelle restent à définir avant l'ouverture des ventes.</p></details>
+      <details><summary>Est-ce que je peux passer une vraie commande ?<span>+</span></summary><p>Pour le moment, cette boutique est une démonstration. Tu peux composer un pack et tester le panier. Aucun paiement ni aucune commande réelle ne sont envoyés.</p></details>
+    </div></section>
+    <section class="final-cta"><div class="container"><p class="eyebrow">PAS BESOIN D'ÊTRE SÉRIEUX POUR ÊTRE BIEN ENTOURÉ.</p><h2>ON FAIT<br /><span>ÉQUIPE ?</span></h2><a class="button button--dark" href="#packs">Duo, Trio ou Quatro <span>↗</span></a></div><span class="final-smile" aria-hidden="true">☺</span></section>
   </main>
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="footer">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <span class="nav__brick">🧱</span>
-        <span class="nav__brand">BRICK<span>FACE</span></span>
-        <p>Le style LEGO® en toute saison. Des accessoires fun, hypes et faits pour être remarqués.</p>
-        <div class="footer__social">
-          <a href="#" aria-label="TikTok">🎵</a>
-          <a href="#" aria-label="Instagram">📸</a>
-          <a href="#" aria-label="YouTube">▶️</a>
-          <a href="#" aria-label="X">𝕏</a>
-        </div>
-      </div>
-      <div class="footer__col">
-        <h5>Boutique</h5>
-        <a href="#produit">Balaclava Minifigure</a>
-        <a href="#features">Pourquoi nous</a>
-        <a href="#avis">Avis clients</a>
-        <a href="#faq">FAQ</a>
-      </div>
-      <div class="footer__col">
-        <h5>Aide</h5>
-        <a href="#">Livraison &amp; suivi</a>
-        <a href="#">Retours 30 jours</a>
-        <a href="#">Nous contacter</a>
-        <a href="#">CGV</a>
-      </div>
-      <div class="footer__col footer__news">
-        <h5>Rejoins le club des briques 😜</h5>
-        <p>-10% sur ta 1ère commande + les drops en avant-première.</p>
-        <form id="newsForm" class="footer__form">
-          <input type="email" placeholder="ton@email.com" required />
-          <button type="submit">GO</button>
-        </form>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <p>© 2026 BRICKFACE™ — Boutique démo. Non affilié à LEGO®. Visuels à titre d'illustration.</p>
-      <p>Fait avec 🟡 et beaucoup trop de café.</p>
-    </div>
-  </footer>
-
-  <!-- ============ PANIER (DRAWER) ============ -->
-  <div class="overlay" id="overlay"></div>
-  <aside class="cart" id="cart" role="dialog" aria-modal="true" aria-label="Panier" aria-hidden="true">
-    <div class="cart__head">
-      <h3>Ton panier 🛒</h3>
-      <button id="closeCart" aria-label="Fermer">✕</button>
-    </div>
-    <div class="cart__ship" id="cartShip">🚚 Plus que <b>50,00 €</b> pour la livraison offerte</div>
-    <div class="cart__shipbar" aria-hidden="true"><span id="cartShipBar"></span></div>
-    <div class="cart__items" id="cartItems"></div>
-    <div class="cart__empty" id="cartEmpty">
-      <span>🫙</span>
-      <p>Ton panier est vide… comme un cœur sans brique.</p>
-      <button class="btn btn--primary" id="cartShop">Découvrir le bonnet</button>
-    </div>
-    <div class="cart__foot" id="cartFoot">
-      <div class="cart__row"><span>Sous-total</span><b id="cartSubtotal">0,00 €</b></div>
-      <div class="cart__row"><span>Livraison</span><b id="cartShipping">—</b></div>
-      <div class="cart__row cart__row--total"><span>Total</span><b id="cartTotal">0,00 €</b></div>
-      <button class="btn btn--primary btn--xl btn--block" id="checkout">PASSER COMMANDE 🔒</button>
-      <p class="cart__mini">🔒 Paiement sécurisé · ↩️ Retour 30 jours</p>
-    </div>
+  <footer class="footer"><div class="container footer__main"><div><a class="brand" href="#top"><span class="brand__icon" aria-hidden="true">☺</span>BRICK<span>FACE</span><sup>™</sup></a><p>Des bonnes têtes.<br />Et des souvenirs à plusieurs.</p></div><nav aria-label="Navigation de bas de page"><a href="#packs">Les packs</a><a href="#expressions">Les expressions</a><a href="#lookbook">En images</a><a href="#faq">Une question ?</a></nav><div class="footer__note"><span>LE JAUNE NOUS VA BIEN.</span><p>Une collection pensée pour la bande.<br />Duo · Trio · Quatro</p></div></div><div class="container footer__bottom"><p>© 2026 BRICKFACE · Boutique de démonstration.</p><p>Non affilié à LEGO®. Visuels à titre d'illustration.</p></div></footer>
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart" id="cart" role="dialog" aria-modal="true" aria-label="Ton panier" aria-hidden="true" inert>
+    <div class="cart__head"><h2>TA BANDE.</h2><button id="closeCart" class="icon-button" aria-label="Fermer le panier">✕</button></div><p class="cart__intro">Tes packs, prêts à faire équipe.</p>
+    <div class="cart__items" id="cartItems"></div><div class="cart__empty" id="cartEmpty"><span aria-hidden="true">☺</span><h3>Il manque quelques têtes.</h3><p>Commence par composer ton premier pack.</p><button class="button button--yellow" id="cartShop">Découvrir les packs ↗</button></div>
+    <div class="cart__foot" id="cartFoot" hidden><div class="cart__row"><span>Sous-total</span><b id="cartSubtotal">0,00 €</b></div><div class="cart__row"><span>Livraison</span><b id="cartShipping">Offerte</b></div><div class="cart__row cart__row--total"><span>Total</span><b id="cartTotal">0,00 €</b></div><button class="button button--yellow button--full" id="checkout">Simuler la commande <span>↗</span></button><p class="demo-note">Démonstration uniquement · aucun paiement débité.</p></div>
   </aside>
-
-  <!-- ============ LIGHTBOX ============ -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Aperçu agrandi du produit" aria-hidden="true">
-    <button class="lightbox__close" id="lightboxClose" aria-label="Fermer l'aperçu">✕</button>
-    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Image précédente">‹</button>
-    <figure class="lightbox__stage">
-      <img id="lbImg" src="assets/01-produit-sourire.jpg" alt="Aperçu du produit" />
-      <figcaption id="lbCaption">Sourire — l'expression signature  ·  1/6</figcaption>
-    </figure>
-    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Image suivante">›</button>
-    <div class="lightbox__hint">← → pour naviguer · Échap pour fermer</div>
-  </div>
-
-  <!-- ============ BARRE MOBILE ============ -->
-  <div class="mbar" id="mbar">
-    <div class="mbar__info">
-      <small>Balaclava Minifigure</small>
-      <b id="mbarPrice">39,90 €</b>
-    </div>
-    <button class="btn btn--primary" id="mbarAdd">AJOUTER 🛒</button>
-  </div>
-
-  <!-- ============ RETOUR EN HAUT ============ -->
-  <button class="totop" id="toTop" aria-label="Revenir en haut de la page">↑</button>
-
-  <!-- ============ TOAST ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo agrandie" hidden><button class="icon-button lightbox__close" id="lightboxClose" aria-label="Fermer la photo">✕</button><button class="lightbox__arrow lightbox__arrow--prev" id="lbPrev" aria-label="Photo précédente">←</button><figure><img id="lbImg" src="assets/01-produit-sourire.jpg" alt="Balaclava Sourire" /><figcaption id="lbCaption"></figcaption></figure><button class="lightbox__arrow lightbox__arrow--next" id="lbNext" aria-label="Photo suivante">→</button><p class="lightbox__hint">← → pour naviguer · Échap pour fermer</p></div>
+  <div class="mobilebar" id="mobilebar" hidden><div><small id="mobilePack">Pack Duo · 2 bonnets</small><strong id="mobilePrice">69,90 €</strong></div><button class="button button--yellow" id="mobileCompose">Composer ↗</button></div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <canvas id="confetti" class="confetti"></canvas>
-
+  <noscript><div class="noscript">Active JavaScript pour composer ton pack et utiliser le panier.</div></noscript>
   <script src="script.js"></script>
 </body>
 </html>
-
